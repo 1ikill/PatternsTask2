@@ -10,10 +10,11 @@ public class PayPalPaymentAdapter extends CardPayment {
     private final static int CARD_NUMBER_INDEX = 0;
     private final static int CARD_HOLDER_NAME_INDEX = 1;
     private final static int AMOUNT_INDEX = 2;
+    private final static String DELIMETER = ", ";
 
     public PayPalPaymentAdapter(PayPalPayment payment){
         this.payment = payment;
-        this.paymentData = payment.getPaymentInfo().split(", ");
+        this.paymentData = payment.getPaymentInfo().split(DELIMETER);
     }
 
     @Override
