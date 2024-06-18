@@ -6,7 +6,7 @@ import com.esde.model.PayPalPayment;
 public class PayPalPaymentAdapter extends CardPayment {
 
     private PayPalPayment payment;
-    String[] paymentData;
+    private String[] paymentData;
     private final static int CARD_NUMBER_INDEX = 0;
     private final static int CARD_HOLDER_NAME_INDEX = 1;
     private final static int AMOUNT_INDEX = 2;
